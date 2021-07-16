@@ -25,14 +25,14 @@ int main()
   printf("Enter the distance the van has travelled: ");
   scanf("%d", &dis);
 
-  if(dis >= 30)
+  if(dis <= 30)
   {
     amount = dis*50;
     printf("Amount is: %.2f", amount);      
   }
   else
   {
-    amount = dis*50;
+    amount = dis*30 + (dis-30)*40;
     printf("Amount is: %.2f", amount);      
   }
   return 0;
